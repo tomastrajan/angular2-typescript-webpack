@@ -1,0 +1,19 @@
+{
+  "name": "angular2-typescript-webpack-starter-project",
+  "version": "0.0.1",
+  "description": "Angular 2 Typescript Webpack starter project",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "angular2",
+    "seed"
+  ],
+  "author": "Tomas Trajan",
+  "email": "tomas.trajan@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.46"
+  }
+}
