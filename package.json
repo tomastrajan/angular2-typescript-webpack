@@ -17,7 +17,10 @@
   "email": "tomas.trajan@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "angular2": "^2.0.0-alpha.46"
+    "angular2": "^2.0.0-alpha.46",
+    "hammerjs": "^2.0.4",
+    "jquery": "^2.1.4",
+    "materialize-css": "^0.97.2"
   },
   "devDependencies": {
     "chalk": "^1.1.1",

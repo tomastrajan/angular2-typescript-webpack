@@ -6,7 +6,8 @@
 	"experimentalDecorators": true
   },
   "files": [
-    "src/main.ts"
+    "src/main.ts",
+    "src/app/app.ts"
   ],
   "exclude": []
 }

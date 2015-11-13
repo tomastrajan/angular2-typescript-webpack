@@ -1,10 +1,10 @@
-import 'reflect-metadata';
-import {bootstrap, Component} from 'angular2/angular2';
+import 'materialize-css/dist/css/materialize.css';
+import 'materialize-css/dist/js/materialize.js';
 
-@Component({
-    selector: 'my-app',
-    template: '<h1>Angular 2 Typescript Webpack Starter Project</h1>'
-})
-class AppComponent { }
+import 'reflect-metadata';
+
+import  {bootstrap } from 'angular2/angular2';
+
+import AppComponent from './app/app';
 
 bootstrap(AppComponent);

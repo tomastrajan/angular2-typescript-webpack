@@ -33,6 +33,10 @@ var DEFAULT_PARAMS = {
             template: './src/index.html',
             inject: 'body'
         }),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        }),
         new webpack.optimize.DedupePlugin()
     ],
     devServer: {
@@ -78,7 +82,7 @@ var PARAMS_PER_TARGET = {
 
 };
 
-var target = _resolveBuildTarget(DEFAULT_TARGET)
+var target = _resolveBuildTarget(DEFAULT_TARGET);
 var params = _.merge(DEFAULT_PARAMS, PARAMS_PER_TARGET[target], _mergeArraysCustomizer);
 
 _printBuildInfo(target, params);
