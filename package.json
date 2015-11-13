@@ -1,7 +1,7 @@
 {
   "name": "angular2-typescript-webpack-starter-project",
   "version": "0.0.1",
-  "description": "Angular 2 Typescript Webpack starter project",
+  "description": "Angular 2 Typescript Webpack Starter Project",
   "main": "src/main.js",
   "scripts": {
     "start": "webpack-dev-server --inline --hot --TARGET=DEV",
