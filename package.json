@@ -4,7 +4,10 @@
   "description": "Angular 2 Typescript Webpack starter project",
   "main": "src/main.js",
   "scripts": {
-    "test": "test"
+    "start": "webpack-dev-server --inline --hot --TARGET=DEV",
+    "build": "webpack && node server.js",
+    "dist": "webpack --TARGET=DIST && node server.js --TARGET=DIST",
+    "ci": "webpack"
   },
   "keywords": [
     "angular2",
@@ -15,5 +18,22 @@
   "license": "MIT",
   "dependencies": {
     "angular2": "^2.0.0-alpha.46"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.1",
+    "clean-webpack-plugin": "^0.1.3",
+    "connect": "^3.4.0",
+    "css-loader": "^0.20.1",
+    "file-loader": "^0.8.4",
+    "html-webpack-plugin": "^1.6.2",
+    "lodash": "^3.10.1",
+    "minimist": "^1.2.0",
+    "style-loader": "^0.12.4",
+    "svg-loader": "0.0.2",
+    "ts-loader": "^0.5.6",
+    "typescript": "^1.6.2",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
   }
 }
