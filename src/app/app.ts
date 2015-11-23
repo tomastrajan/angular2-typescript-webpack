@@ -1,50 +1,33 @@
-import { Component, CORE_DIRECTIVES } from 'angular2/angular2';
+const logo = require('../image/logo.png');
+
+import { Component } from 'angular2/angular2';
+
+import TestComponent from './test/test';
 
 @Component({
-    selector: 'my-app',
-    directives: [ CORE_DIRECTIVES ],
+    selector: 'app',
+    directives: [TestComponent],
     template: `
         <div class="container">
-            <h1>Angular 2 Typescript Webpack Starter Project</h1>
-            <p>{{test}} {{model}} {{counter}}</p>
-            <p [hidden]="visible">Visible test</p>
-            <input [(value)]="model" />
-            <ul>
-                <li *ng-for="#name of names">{{name}}</li>
-            </ul>
-            <button class="btn waves-effect waves-light" (click)="increment()">+</button>
-            <button class="btn waves-effect waves-light" (click)="addName()">Add name</button>
-            <button class="btn waves-effect waves-light" (click)="toggleVisible()">Toggle visible</button>
+            <nav>
+                <div class="nav-wrapper purple darken-4">
+                <a href="#!" class="brand-logo">
+                    <img src="` + logo + `" style="position: absolute; top:5px; left: 5px; height: 55px;" />
+                    <span style="margin-left: 70px">Angular 2 Typescript Webpack Starter Project</span>
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="javascript:void(0)">Todos</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="javascript:void(0)">Todos</a></li>
+                </ul>
+                </div>
+            </nav>
+
+            <test></test>
         </div>
     `
 })
 export default class AppComponent {
-
-    model: string;
-    test: string;
-    counter: number = 0;
-    names: string[];
-    visible: boolean;
-
-    constructor() {
-        this.model = 'model';
-        this.test = 'test';
-        this.names = ['Tomas'];
-        this.visible = false;
-    }
-
-    increment() {
-        this.counter++;
-        console.log(this.counter);
-    }
-
-    addName() {
-        this.names.push('Lolo');
-        console.log(this.names);
-    }
-
-    toggleVisible() {
-        this.visible = !this.visible;
-    }
-
 }

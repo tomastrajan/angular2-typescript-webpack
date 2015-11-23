@@ -14,7 +14,7 @@ var DEFAULT_PARAMS = {
         extensions: ['', '.ts', '.js']
     },
     entry: {
-        main: './src/main.ts'
+        bootstrap: './src/bootstrap.ts'
     },
     output: {
         publicPath: '',

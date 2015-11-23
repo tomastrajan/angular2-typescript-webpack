@@ -6,10 +6,14 @@
 	"experimentalDecorators": true
   },
   "files": [
-    "src/main.ts",
+    "src/bootstrap.ts",
     "src/app/app.ts",
+    "src/app/test/test.ts",
 
-    "node_modules/angular2/angular2.d.ts"
+    "typings/node/node.d.ts",
+
+    "node_modules/angular2/angular2.d.ts",
+    "node_modules/angular2/src/core/metadata.d.ts"
   ],
   "exclude": []
 }
