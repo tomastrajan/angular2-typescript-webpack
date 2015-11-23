@@ -7,7 +7,7 @@
   },
   "files": [
     "src/main.ts",
-    "src/app/app.ts"
+    "src/app/app.ts",
 
     "node_modules/angular2/angular2.d.ts"
   ],
