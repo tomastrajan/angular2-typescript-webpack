@@ -25,6 +25,7 @@ var DEFAULT_PARAMS = {
         loaders: [
             {test: /\.tsx?$/, loader: 'ts-loader?jsx=true', exclude: /(\.test.ts$|node_modules)/},
             {test: /\.css$/, loader: 'style!css'},
+            {test: /\.less$/, loader: 'raw!less'},
             {test: /\.tpl.html/, loader: 'html'},
             {test: /\.(ico|png|jpg|gif|svg|eot|ttf|woff|woff2)(\?.+)?$/, loader: 'url?limit=50000'}
         ]
