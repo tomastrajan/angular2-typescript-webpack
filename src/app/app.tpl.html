@@ -1,21 +1,28 @@
-<div class="container">
+
+<div class="navbar-fixed">
     <nav>
-        <div class="nav-wrapper purple darken-4">
+        <div class="nav-wrapper deep-purple">
             <a href="#!" class="brand-logo">
                 <img src="../image/logo.png" />
                 <span>Starter Project</span>
             </a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="navbar-menu-collapse" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="javascript:void(0)">Sign in</a></li>
-                <li><a href="javascript:void(0)">Sign up</a></li>
+                <li><a [router-link]="['Home']">Home</a></li>
+                <li><a [router-link]="['Todo']">Todo</a></li>
+                <!--<li><a [router-link]="['/user/signin']">Sign in</a></li>-->
+                <!--<li><a [router-link]="['/user/signup']">Sign up</a></li>-->
             </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li><a href="javascript:void(0)">Sign in</a></li>
-                <li><a href="javascript:void(0)">Sign up</a></li>
+            <ul class="side-nav" id="navbar-menu-collapse">
+                <li><a [router-link]="['Home']">Home</a></li>
+                <li><a [router-link]="['Todo']">Todo</a></li>
+                <!--<li><a [router-link]="['/user/signin']">Sign in</a></li>-->
+                <!--<li><a [router-link]="['/user/signup']">Sign up</a></li>-->
             </ul>
         </div>
     </nav>
+</div>
 
+<div class="container">
     <router-outlet></router-outlet>
 </div>
