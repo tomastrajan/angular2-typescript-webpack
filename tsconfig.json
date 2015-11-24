@@ -8,11 +8,13 @@
   "files": [
     "src/bootstrap.ts",
     "src/app/app.ts",
-    "src/app/test/test.ts",
+    "src/app/todo/todo.ts",
 
     "typings/node/node.d.ts",
 
     "node_modules/angular2/angular2.d.ts",
+    "node_modules/angular2/router.d.ts",
+    "node_modules/angular2/src/router/route_config_decorator.d.ts",
     "node_modules/angular2/src/core/metadata.d.ts"
   ],
   "exclude": []

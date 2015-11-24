@@ -1,7 +1,7 @@
 import { Component } from 'angular2/angular2';
 
 @Component({
-    selector: 'test',
+    selector: 'todo',
     template: `
         <div>
             <p>Counter: {{counter}}</p>
@@ -15,7 +15,7 @@ import { Component } from 'angular2/angular2';
         </div>
     `
 })
-export default class TestComponent {
+export default class TodoComponent {
 
     counter: number = 0;
     model: string;
