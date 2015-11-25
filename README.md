@@ -3,6 +3,8 @@
 Mostly a repo I am using for trying out & learning Angular 2 concepts which will eventually evolve into a starter project
 which I will use for all new Angular 2 projects.
 
+Checkout [demo](http://tomastrajan.github.io/angular2-typescript-webpack)
+
 ## Stack
 
 * Angular 2
