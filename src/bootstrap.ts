@@ -1,3 +1,10 @@
+import './main.scss';
+
+declare var $: any;
+import 'velocity-animate/velocity.min.js';
+import 'jquery/dist/jquery.min.js';
+import 'materialize-css/dist/js/materialize.min.js';
+
 import 'zone.js';
 import 'reflect-metadata';
 
@@ -11,6 +18,11 @@ bootstrap(AppComponent, [
 
     provide(LocationStrategy, { useClass: HashLocationStrategy })
 ]).then(
-    success => console.log('App bootstrapped!'),
+    success => {
+        console.log('App bootstrapped!');
+        //$(document).ready(function() {
+        //    $(".button-collapse").sideNav();
+        //});
+    },
     error => console.log(error)
 );

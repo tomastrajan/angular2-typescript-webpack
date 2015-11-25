@@ -24,10 +24,9 @@ var DEFAULT_PARAMS = {
     module: {
         loaders: [
             {test: /\.tsx?$/, loader: 'ts-loader?jsx=true', exclude: /(\.test.ts$|node_modules)/},
-            {test: /\.css$/, loader: 'style!css'},
-            {test: /\.less$/, loader: 'raw!less'},
+            {test: /\.scss/, loader: 'style!css!resolve-url!sass?sourceMap'},
             {test: /\.tpl.html/, loader: 'html'},
-            {test: /\.(ico|png|jpg|gif|svg|eot|ttf|woff|woff2)(\?.+)?$/, loader: 'url?limit=50000'}
+            {test: /\.(ico|png|jpg|jpeg|gif|svg|eot|ttf|woff|woff2)(\?.+)?$/, loader: 'url?limit=50000'}
         ]
     },
     plugins: [
@@ -42,7 +41,6 @@ var DEFAULT_PARAMS = {
         new webpack.optimize.DedupePlugin()
     ],
     devServer: {
-        contentBase: 'dev/',
         port: 8081
     },
     debug: true,

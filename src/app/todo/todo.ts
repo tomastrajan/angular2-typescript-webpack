@@ -3,7 +3,7 @@ import { Component } from 'angular2/angular2';
 @Component({
     selector: 'todo',
     template: `
-        <div>
+        <div class="container">
             <p>Counter: {{counter}}</p>
             <button class="btn waves-effect waves-light" (click)="increment()">+</button>
             <br />

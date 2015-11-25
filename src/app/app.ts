@@ -7,7 +7,6 @@ import TodoComponent from './todo/todo';
 @Component({
     selector: 'app',
     template: require('./app.tpl.html'),
-    styles: [require('./app.less')],
     directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
