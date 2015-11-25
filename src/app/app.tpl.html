@@ -1,55 +1,58 @@
-
-<div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper deep-purple">
-            <a href="#!" class="brand-logo">
-                <img src="../image/logo.png" />
-                <span>Starter Project</span>
-            </a>
-            <a href="#" data-activates="navbar-menu-collapse" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a [router-link]="['Home']">Home</a></li>
-                <li><a [router-link]="['Todo']">Todo</a></li>
-                <!--<li><a [router-link]="['/user/signin']">Sign in</a></li>-->
-                <!--<li><a [router-link]="['/user/signup']">Sign up</a></li>-->
-            </ul>
-            <ul class="side-nav" id="navbar-menu-collapse">
-                <li><a [router-link]="['Home']">Home</a></li>
-                <li><a [router-link]="['Todo']">Todo</a></li>
-                <!--<li><a [router-link]="['/user/signin']">Sign in</a></li>-->
-                <!--<li><a [router-link]="['/user/signup']">Sign up</a></li>-->
-            </ul>
-        </div>
-    </nav>
-</div>
-
-<router-outlet></router-outlet>
-
-<footer class="page-footer amber darken-2">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Angular 2 Starter Project</h5>
-                <p class="grey-text text-lighten-4">
-                    Mostly a repo I am using for trying out & learning Angular 2 concepts which will eventually evolve
-                    into a starter project which I will use for all new Angular 2 projects.
-                </p>
-            </div>
-            <div class="col l3 offset-l3 s12">
-                <h5 class="white-text">Follow me on</h5>
-                <ul>
-                    <li><a class="grey-text text-lighten-3" href="https://medium.com/@tomastrajan">Medium</a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://github.com/tomastrajan/">GitHub</a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://twitter.com/tomastrajan">Twitter</a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://slides.com/tomastrajan/">Slides</a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UC7XgRHIVoqnh3U5Vmly9ofQ/feed">Youtube</a></li>
+<div id="wrapper">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper deep-purple">
+                <a href="#!" class="brand-logo">
+                    <img src="../image/logo.png" />
+                    <span>Starter Project</span>
+                </a>
+                <a href="#" data-activates="navbar-menu-collapse" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a [router-link]="['Home']">Home</a></li>
+                    <li><a [router-link]="['Todo']">Todos</a></li>
+                    <li><a [router-link]="['Signin']">Sign in</a></li>
+                    <li><a [router-link]="['Signup']">Sign up</a></li>
+                </ul>
+                <ul class="side-nav" id="navbar-menu-collapse">
+                    <li><a [router-link]="['Home']">Home</a></li>
+                    <li><a [router-link]="['Todo']">Todos</a></li>
+                    <li><a [router-link]="['Signin']">Sign in</a></li>
+                    <li><a [router-link]="['Signup']">Sign up</a></li>
                 </ul>
             </div>
-        </div>
+        </nav>
     </div>
-    <div class="footer-copyright">
+
+    <div id="content">
+        <router-outlet></router-outlet>
+    </div>
+
+    <footer id="footer" class="page-footer amber darken-2">
         <div class="container">
-            © 2016 Tomas Trajan
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Angular 2 Starter Project</h5>
+                    <p class="grey-text text-lighten-4">
+                        Mostly a repo I am using for trying out & learning Angular 2 concepts which will eventually evolve
+                        into a starter project which I will use for all new Angular 2 projects.
+                    </p>
+                </div>
+                <div class="col l3 offset-l3 s12">
+                    <h5 class="white-text">Follow me on</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://medium.com/@tomastrajan">Medium</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/tomastrajan/">GitHub</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://twitter.com/tomastrajan">Twitter</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://slides.com/tomastrajan/">Slides</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UC7XgRHIVoqnh3U5Vmly9ofQ/feed">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 Tomas Trajan
+            </div>
+        </div>
+    </footer>
+</div>

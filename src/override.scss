@@ -1,0 +1,17 @@
+@import '~materialize-css/sass/components/color';
+
+$primary-color: color("deep-purple", "base");
+$primary-color-light: false ;
+$primary-color-dark: false;
+@if not $primary-color-light {
+  $primary-color-light: lighten($primary-color, 15%);
+}
+@if not $primary-color-dark {
+  $primary-color-dark: darken($primary-color, 15%);
+}
+$secondary-color: color("amber", "darken-2");
+$success-color: color("green", "base");
+$error-color: color("red", "base");
+$link-color: color("deep-purple", "base");
+
+@import '~materialize-css/sass/materialize';

@@ -20,7 +20,7 @@
     "angular2": "^2.0.0-alpha.46",
     "hammerjs": "^2.0.4",
     "jquery": "^2.1.4",
-    "materialize-css": "^0.97.2",
+    "materialize-css": "^0.97.3",
     "velocity-animate": "^1.2.3"
   },
   "devDependencies": {

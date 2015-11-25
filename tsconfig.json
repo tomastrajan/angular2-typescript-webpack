@@ -8,12 +8,13 @@
   "files": [
     "src/bootstrap.ts",
     "src/app/app.ts",
-    "src/app/todo/todo.ts",
+    "src/app/todo/todos.ts",
 
     "typings/node/node.d.ts",
 
     "node_modules/angular2/angular2.d.ts",
     "node_modules/angular2/router.d.ts",
+    "node_modules/angular2/http.d.ts",
     "node_modules/angular2/src/router/route_config_decorator.d.ts",
     "node_modules/angular2/src/core/metadata.d.ts"
   ],

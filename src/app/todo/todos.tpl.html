@@ -1,0 +1,31 @@
+<div class="container">
+    <br />
+    <br />
+    <div class="row">
+        <div class="col s12 center-align">
+            <h2>What do you need to do ?</h2>
+        </div>
+    </div>
+    <div class="row z-depth-1 todo-input-panel">
+        <div class="col m2"><br /></div>
+        <div class="col s12 m5 input-field">
+            <input [(ng-model)]="description" placeholder="Activity description" type="text" class="validate" required>
+        </div>
+        <div class="col s12 m4">
+            <button class="btn waves-effect waves-light deep-purple todo-add-button" (click)="addTodo()">
+                <i class="material-icons left">add</i>
+                Add todo
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12" *ng-if="todos.length">
+            <ul class="collection">
+                <li class="collection-item" *ng-for="#todo of todos">{{todo.description}}</li>
+            </ul>
+        </div>
+        <div class="col s12 center-align" *ng-if="!todos.length">
+            <p>Nothing yet, try adding some todos...</p>
+        </div>
+    </div>
+</div>
